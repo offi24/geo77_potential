@@ -55,24 +55,19 @@
   attribution: '<a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>, <a href="http://viewfinderpanoramas.org">SRTM</a> | Map style: &copy; <a href="https://opentopomap.org">OpenTopoMap</a> (<a href="https://creativecommons.org/licenses/by-sa/3.0/">CC-BY-SA</a>)'
   });
  
-  // basemap 3:
-  var osmint_basemap = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-  maxZoom: 19,
-  attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-  }).addTo(mymap);
+
  
   // Basemap dictonary
   var basemaps = {
    "Open Street Map DE": osm_basemap,
-   "Open Topo Map": otm_basemap,
-   "Open Street Map INT": osmint_basemap
+   "Open Topo Map": otm_basemap
   };
   
  // Bayern  
   var overlay_bayern = L.geoJSON(bayern,{
 	weight: 4,
-	fillColor: "#ff123d",
-	color: "#ff123d",
+	fillColor: "#f00004",
+	color: "#f00004",
 	opacity: 0.9,
 	fillOpacity:0.9,
 	}).addTo(mymap);
@@ -80,8 +75,8 @@
  // Add Mecklenburg Vorpommern  
   var overlay_meck_vo_pom = L.geoJSON(meck_vo_pom,{
 	weight: 4,
-	fillColor: "#fff825",
-	color: "#fff825",
+	fillColor: "#0e69d7",
+	color: "#0e69d7",
 	opacity: 0.9,
 	fillOpacity:0.9,
 	}).addTo(mymap);
@@ -89,8 +84,8 @@
  // Add Baden Wuerttemberg  
   var overlay_baden_wuer  = L.geoJSON(baden_wuer,{
 	weight: 4,
-	fillColor: "#1d30ff",
-	color: "#1d30ff",
+	fillColor: "#0df1a9",
+	color: "#0df1a9",
 	opacity: 0.9,
 	fillOpacity:0.9,
 	}).addTo(mymap);
@@ -98,8 +93,8 @@
  // Add Hamburg  
   var overlay_hamburg = L.geoJSON(hamburg,{
 	weight: 4,
-	fillColor: "#ff7800",
-	color: "#ff7800",
+	fillColor: "#f7f41c",
+	color: "#f7f41c",
 	opacity: 0.9,
 	fillOpacity:0.9,
 	}).addTo(mymap);
